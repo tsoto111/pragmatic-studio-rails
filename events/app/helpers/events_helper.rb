@@ -6,7 +6,4 @@ module EventsHelper
 			number_to_currency(event.price)
 		end
 	end
-	
-	
-	
 end
