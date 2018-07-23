@@ -19,6 +19,3 @@
 
 # Ignore Byebug command history file.
 .byebug_history
-
-# Ignore DS_Store files!!!
-**/.DS_Store
