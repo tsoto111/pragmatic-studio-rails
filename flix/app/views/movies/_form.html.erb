@@ -19,5 +19,26 @@
 		<%= f.label :total_gross, "Total Gross" %><br/>
 		<%= f.number_field :total_gross%>
 	</p>
+	
+	<p>
+		<%= f.label :cast, "Cast" %><br/>
+		<%= f.text_field :cast %>
+	</p>
+	
+	<p>
+		<%= f.label :director, "Director" %><br/>
+		<%= f.text_field :director %>
+	</p>
+	
+	<p>
+		<%= f.label :duration, "Duration" %><br/>
+		<%= f.text_field :duration, size: 10 %>
+	</p>
+	
+	<p>
+		<%= f.label :image_file_name, "Image File Name" %><br/>
+		<%= f.text_field :image_file_name %>
+	</p>
+	
 	<%= f.submit %> | <%= link_to "Cancel", movies_path %>
 <% end %>
