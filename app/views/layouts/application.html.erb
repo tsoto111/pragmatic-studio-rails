@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Events</title>
-		<%= csrf_meta_tags %>
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	</head>
-	<body>
-		<%= render "layouts/header" %>
-		<%= render "layouts/sidebar" %>
-		<div class="main-content">
-			<%= yield %>
-		</div>
-		<%= render "layouts/footer" %>
-	</body>
+  <head>
+    <title>Events</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= render 'layouts/header' %>
+
+  <div id="wrapper">
+
+    <div id="container">
+      <%= render "layouts/sidebar" %>
+      <section id="content">
+        <%= yield %>
+      </section>
+    </div>
+
+  </div>
+
+  <%= render 'layouts/footer' %>
+  </body>
 </html>
