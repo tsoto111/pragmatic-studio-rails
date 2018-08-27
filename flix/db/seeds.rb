@@ -7,61 +7,99 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Movie.create!([
-	{
-		title: "Castaway on the Moon",
-		rating: "PG-13",
-		total_gross: "3718480.00",
-		description: "A failed suicide attempt leads a heartbroken man to live a life in the wilderness",
-		released_on: "2009-5-14",
-		cast: "Jae-yeong Jeong, Ryeowon Jung, Yeong-seo Park",
-		director: "Hae-jun Lee",
-		duration: "116 min",
-		image_file_name: "castaway_on_the_moon.jpg"
-	},
-	{
-		title: "Iron Man",
-		rating: "PG-13",
-		total_gross: "100000000000.00",
-		description: "Tony Stark builds an armored suit to fight the throes of evil",
-		released_on: "2008-02-02",
-		cast: "Robert Downey Jr., Gwyneth Paltrow, Terrence Howard",
-		director: "Jon Favreau",
-		duration: "126 min",
-		image_file_name: "iron_man.jpg"
-	},
-	{
-		title: "The Host",
-		rating: "R",
-		total_gross: "89431890.00",
-		description: "A monster emerges from Seoul's Han River and focuses its attention on attacking people. One victim's loving family does what it can to rescue her from its clutches.
-
-",
-		released_on: "2007-03-30",
-		cast: "Kang-ho Song, Hee-Bong Byun, Hae-il Park ",
-		director: "Joon-ho Bong",
-		duration: "120 min",
-		image_file_name: "the_host.jpg"
-	},
-	{
-		title: "Catwoman",
-		rating: "PG-13",
-		total_gross: "",
-		description: "Patience Philips has more than respectable career as a graphic designer",
-		released_on: "2004-07-23",
-		cast: "Halle Berry, Sharon Stone, Benjamin Bratt",
-		director: "Pitof",
-		duration: "104 min",
-		image_file_name: "catwoman.jpg"
-	},
-	{
-		title: "Spider-Man",
-		rating: "PG-13",
-		total_gross: "139000000.00",
-		description: "Peter Parker gets bit by a genetically modified spider",
-		released_on: "2002-05-03",
-		cast: "Tobey Maguire, Kirsten Dunst, Willem Dafoe",
-		director: "Sam Raimi",
-		duration: "121 min",
-		image_file_name: "spider-man.jpg"
-	}
+  {
+    title: 'Iron Man',
+    description: 
+    %{
+      When wealthy industrialist Tony Stark is forced to build an 
+      armored suit after a life-threatening incident, he ultimately 
+      decides to use its technology to fight against evil.
+    }.squish,
+    image_file_name: 'ironman.jpg',
+    cast: 'Robert Downey Jr., Gwyneth Paltrow and Terrence Howard',
+    released_on: "2008-05-02",
+    duration: '126 min',
+    director: 'Jon Favreau',
+    rating: 'PG-13',
+    total_gross: 318_412_101
+  },
+  {
+    title: 'Superman',
+    description: 
+    %{
+      An alien orphan is sent from his dying planet to Earth, where 
+      he grows up to become his adoptive home's first and greatest 
+      super-hero.
+    }.squish,
+    image_file_name: 'superman.jpg',
+    cast: 'Christopher Reeve, Margot Kidder and Gene Hackman',
+    released_on: "1978-12-15",
+    duration: '143 min',
+    director: 'Richard Donner',
+    rating: 'PG',
+    total_gross: 134_218_018
+  },
+  {
+    title: 'Spider-Man',
+    description: 
+    %{
+      When bitten by a genetically modified spider, a nerdy, shy, and 
+      awkward high school student gains spider-like abilities that he 
+      eventually must use to fight evil as a superhero after tragedy 
+      befalls his family.
+    }.squish,
+    image_file_name: 'spiderman.jpg',
+    cast: 'Tobey Maguire, Kirsten Dunst and Willem Dafoe',
+    released_on: "2002-05-03",
+    duration: '121 min',
+    director: 'Sam Raimi',
+    rating: 'PG-13',
+    total_gross: 403_706_375
+  },
+  {
+    title: 'Batman',
+    description: 
+    %{
+      The Dark Knight of Gotham City begins his war on crime with his 
+      first major enemy being the clownishly homicidal Joker.
+    }.squish,
+    image_file_name: 'batman.jpg',
+    cast: 'Michael Keaton, Jack Nicholson and Kim Basinger',
+    released_on: "1989-06-23",
+    duration: '126 min',
+    director: 'Tim Burton',
+    rating: 'PG-13',
+    total_gross: 251_188_924
+  },
+  {
+    title: "Catwoman",
+    description: 
+    %{
+      Patience Philips seems destined to spend her life apologizing for taking up space. 
+      Despite her artistic ability&mdash;she has a more than respectable career as a graphic 
+      designer.
+    }.squish,
+    image_file_name: "catwoman.jpg",
+    cast: "Halle Berry, Sharon Stone and Benjamin Bratt",
+    released_on: "2004-07-23",
+    duration: "101 min",
+    director: "Jean-Christophe 'Pitof' Comar",
+    rating: "PG-13",
+    total_gross: 40200000.00
+  },
+  {
+    title: 'Batman vs. Godzilla',
+    description: 
+    %{
+      An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira.
+      Hang on to your popcorn, kids!
+    }.squish,
+    image_file_name: 'batman-vs-godzilla.jpg',
+    cast: 'Bruce Wayne, Gojira',
+    released_on: 10.days.from_now,
+    duration: '211 min',
+    director: 'Ishiro Honda',
+    rating: 'PG-13',
+    total_gross: 387_623_910
+  }
 ])
