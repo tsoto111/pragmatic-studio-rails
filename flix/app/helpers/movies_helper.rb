@@ -9,9 +9,9 @@ module MoviesHelper
 	
 	def image_for(movie)
 		if movie.image_file_name.blank?
-			image_tag "placeholder.jpg", style: "width:300px; height:auto;"
+			image_tag "placeholder.jpg"
 		else
-			image_tag movie.image_file_name, style: "width:300px; height:auto;"
+			image_tag movie.image_file_name
 		end
 	end
 	

@@ -1,3 +1,18 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "typography";
+
+article.movie {
+	overflow:hidden;
+	clear:both;
+	margin-bottom:2rem;
+	img {
+		display:block;
+		width:300px; 
+		height:auto;
+		float:left;
+		margin:0px 15px;
+		border:3px solid $secondary-color;
+	}
+}
