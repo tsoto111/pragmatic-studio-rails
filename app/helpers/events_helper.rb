@@ -9,9 +9,9 @@ module EventsHelper
 	
 	def image_for(event)
 		if event.image_file_name.blank?
-			image_tag 'placeholder.png', :style => "width:100px; height:auto; display:block;"
+			image_tag 'placeholder.png'
 		else
-			image_tag event.image_file_name, :style => "width:100px; height:auto; display:block;"
+			image_tag event.image_file_name
 		end
 	end
 	
