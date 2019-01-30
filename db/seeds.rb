@@ -8,6 +8,21 @@
 
 Movie.create!([
 	{
+		title: 'Iron Man 2',
+		description: %{
+			With the world now aware of his identity as Iron Man, Tony Stark 
+			must contend with both his declining health and a vengeful mad man 
+			with ties to his father's legacy.
+		}.squish,
+		image_file_name: 'iron-man-2.jpg',
+		cast: 'Robert Downey Jr.',
+		released_on: "20010-05-07",
+		duration: '124 min',
+		director: 'Jon Favreau',
+		rating: 'PG-13',
+		total_gross: 318412101.00
+	},
+	{
 		title: 'Iron Man',
 		description: %{
 			When wealthy industrialist Tony Stark is forced to build an 
