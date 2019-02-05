@@ -35,7 +35,20 @@ This is a sub-tree of the parent git repository [pragmatic-studio-rails](https:/
 
 ## Setting up push to Sub-tree repo
 
-In my workflow, I don't really like to work in the master branch and push sub-tree changes via `$ git subtree push --prefix=events events master`. Instead, I extract the subtree into its own branch and push from there. All you have to do is pull the `deploy-events` branch down, and push changes in the following way.
+In my workflow, **I don't really like to work in the master branch and push sub-tree changes in the following way**: 
+
+```
+# In parent/master repo
+
+# Push changes
+$ git subtree push --prefix=events events master
+
+# Pull changes
+$ git subtree pull --prefix=events events master
+
+``` 
+
+Instead, I extract the subtree into its own branch and push from there. All you have to do is pull the `deploy-events` branch down, and push changes in the following way.
 
 ```
 # Make sure you have the repo locally
@@ -46,7 +59,12 @@ $ git checkout deploy-events
 
 # Push changes in this branch in the following way
 $ git push events deploy-events:master
-
-# Breakdown of the script above
-$ git push <remote name> <local branch>:<target Repo branch>
 ```
+
+## Setting up deploy to Heroku
+
+Currently, I am deploying to Heroku via the following project domain https://infinite-lake-98433.herokuapp.com/.
+
+1. Login to Heroku via Terminal
+
+	`$ heroku login`
