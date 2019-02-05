@@ -68,3 +68,21 @@ Currently, I am deploying to Heroku via the following project domain https://inf
 1. Login to Heroku via Terminal
 
 	`$ heroku login`
+
+2. Since our heroku instance for this project already exists, we need to create a git remote to our heroku repo in the following way.
+
+	`$ heroku git:remote -a <heroku project name>`
+
+	In our case...
+
+	`$ heroku git:remote -a infinite-lake-98433`
+
+3. By default, this will set our remote name for heroku to `heroku` which is not something that I want since I want to deploy my flix project within this same repo. So, lets rename it:
+
+	`$ git remote rename heroku heroku-events`
+
+4. Now, we can deploy our events app via the `deploy-events` branch in the following way:
+
+	`$ git push heroku-events deploy-events:master`
+
+
