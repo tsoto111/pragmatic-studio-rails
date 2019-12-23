@@ -85,4 +85,6 @@ Currently, I am deploying to Heroku via the following project domain https://inf
 
 	`$ git push heroku-events deploy-events:master`
 
-
+5. If you have rake tasks to run, you can do so by running:
+	
+	`$ heroku run --remote heroku-events rake db:migrate`
