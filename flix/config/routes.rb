@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+	resource :session
+
 	root "movies#index"
 	resources :movies do
 		resources :reviews

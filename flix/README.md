@@ -85,4 +85,7 @@ Currently, I am deploying to Heroku via the following project domain https://sto
 
 	`$ git push heroku-flix deploy-flix:master`
 
+5. If you have rake tasks to run, you can do so by running:
+
+	`$ heroku run --remote heroku-flix rake db:migrate`
 

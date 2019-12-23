@@ -6,6 +6,7 @@
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= favicon_link_tag production? ? asset_path('heroku_flix.ico') : asset_path('flix.ico') %>
 </head>
 
 <body>
