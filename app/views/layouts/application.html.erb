@@ -18,15 +18,18 @@
 				<%= flash[:notice] %>
 			</p>
 		<% end %>
+		<% if flash[:alert] %>
+			<p class="flash alert">
+				<%= flash[:alert] %>
+			</p>
+		<% end %>
 		<div id="container">
 			<%= render "layouts/sidebar" %>
 			<section id="content">
 				<%= yield %>
 			</section>
 		</div>
-
 	</div>
-
 	<%= render 'layouts/footer' %>
 </body>
 </html>
